@@ -36,9 +36,22 @@ This is where I document whatever I am learning
 
 
 
-
-
 Then we proceed to create all the folders!
+
+Then we 
+8. create docs folder:
+	mkdir docs
+9. move the file into docs:
+	git mv how_to.md docs/how_to.md 
+
+10. rename the file to 'basics_git_and_cp.md'
+	git mv docs/how_to.md docs/basics_git_and_cp.md
+	git commit -m "Rename how_to.md to basics_git_and_cp.md"
+	git push origin main
+
+
+	
+
 
 
 
