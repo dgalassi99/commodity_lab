@@ -1,4 +1,27 @@
-env/
-__pycache__/
-*.pyc
+# Python virtual environment
+env_commodity_lab/
 
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings folder
+.vscode/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data folders (if you want to ignore raw/processed data from Git)
+data/raw/
+data/processed/
+
+# Logs, temporary files
+*.log
+*.tmp
+
+# MacOS system files (if you’re on Mac)
+.DS_Store
+
+# Windows system files
+Thumbs.db
