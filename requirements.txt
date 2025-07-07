@@ -10,3 +10,4 @@ lxml
 sqlalchemy
 ipykernel
 yfinance
+plotly
