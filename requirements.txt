@@ -8,3 +8,5 @@ requests
 beautifulsoup4
 lxml
 sqlalchemy
+ipykernel
+yfinance
