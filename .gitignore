@@ -16,6 +16,9 @@ __pycache__/
 data/raw/
 data/processed/
 
+# Database folders 
+db/*
+
 # Logs, temporary files
 *.log
 *.tmp
