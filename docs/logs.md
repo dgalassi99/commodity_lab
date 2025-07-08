@@ -18,6 +18,17 @@
 - Verified virtual environment is properly ignored by git.
 - Added data and created a ipynb file just to make a test
 
+## 2025-07-07
+- Created db folder where storing databases in db (SQL) format
+- Created setup_db.py which will automatically create an SQL.db file and store it into ../db/
+    following the same structure of the data fetched by fetch_yf_spot_data.py
+- Created fetch_yf_spot_data.py to fetch OHLCV spot data from yahoo finance
+- Created upload_db.py to upload a df into the dbs
+- Create teh first project commodity_dashboard
+
+## 2025-07-08
+- Sections 2 and 3 of commodity_dashboard.ipynb
+
 
 
 ...
