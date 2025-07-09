@@ -1,93 +1,63 @@
-# Learning Roadmap for Commodity Trading Lab 🚀
+# Learning Roadmap for Commodity Trading Lab 
 
-Welcome to the roadmap!  
-This document outlines the **skills to learn**, the **topics to explore**, and a flexible **rotation plan** to for the journey in commodity trading.
+## Goal
+Learn about the commodity market with my typical approach: "putting the hands in the dough".
 
----
+*How?* 
 
-## 🎯 Goal
+Well, I have a ChemEng background, hence, I do have some technical knowledge about oil/gas extraction, refining, storing and transportation.. but I am missing the "market side of the coin".
 
-Build a solid, practical skillset for commodity trading firms, focusing on:
+The skills i need to acquire are the following
 
-- Programming & data engineering  
-- Time series & quant analysis  
-- Risk & portfolio metrics  
-- Commodity markets knowledge  
-- Visualization & automation  
+- Programming & data engineering: improve coding and scripting  
+- Time series & quant analysis: get hands on into financial/quantitative analysis 
+- Risk & portfolio metrics: be able to quantify risk and deal with it
+- Commodity markets knowledge: read books, articles and more to be able to have a macroscopic view
+- Visualization & automation: be able to present data and automate analysis to speed up the processes  
 
----
+It looks great... but...
 
-## 📚 Skill fields & topics
+## Where do I start?
 
-### 1. Programming & Data Engineering
-- Python basics & pandas for data manipulation  
-- NumPy for numerical computing  
-- Git & GitHub workflow  
-- SQL basics: writing queries, joins, and databases  
-- API usage and web scraping for data collection  
-- Automating data pipelines  
+Well, I have nobody telling me what do to. It would be great to have a scheduled plan of actions. But no, this is not how it works. The only way is to start somewhere, try, shoot and adjust... repeating this cycle until convergence.
 
-### 2. Time Series & Quant Analysis
-- Compute returns, moving averages, volatility  
-- Backtesting simple strategies (e.g., MA crossover)  
-- Rolling statistics, correlations, drawdowns  
-- Intro to ARIMA/GARCH (optional deeper study)  
+## Plan of Action
 
-### 3. Risk & Portfolio Analytics
-- Portfolio variance and standard deviation  
-- Value-at-Risk (VaR) calculations  
-- Scenario and sensitivity analysis  
-- Portfolio optimization basics  
+### Market Fundamentals + Basic Data
+- [ ] Read: What is a commodity
+- [ ] Read: Difference between spot and futures
+- [ ] Read: Contango and backwardation
+- [ ] Read: Seasonality and influencing factors
+- [ ] Download historical data for 2 commodities (e.g., oil and wheat)
+- [ ] Calculate daily returns and plot prices + returns
+- [ ] Create `docs/market_basics.md` with written definitions in your own words
 
-### 4. Commodities & Market Concepts
-- Futures and options mechanics, payoffs, margining  
-- Backwardation, contango, carry concepts  
-- Forward curve reading and plotting  
-- Freight, storage cost, basis risk overview  
+### Futures Structure + Curves
+- [ ] Study term structure and roll yield
+- [ ] Understand relationship between spot and futures
+- [ ] Download futures data with different maturities
+- [ ] Visualize futures curves over time
+- [ ] Analyze contango/backwardation on the curves
 
-### 5. Visualization & Dashboards
-- Matplotlib and Seaborn for static plots  
-- Streamlit for interactive dashboards  
+### Fundamentals and Market Reports
+- [ ] Learn how to read EIA, USDA, CFTC reports
+- [ ] Understand key data influencing prices
+- [ ] Download inventory data (EIA or USDA)
+- [ ] Compare inventory data with price changes
+- [ ] Update `docs/market_reports.md` with notes
 
-### 6. Putting It All Together: Pipelines & Apps
-- Scheduling scripts (cron, Windows Scheduler)  
-- Updating databases or CSVs automatically  
-- Refreshing dashboards with new data  
-- Git workflows for version control  
+### Quantitative Analysis and First Strategy
+- [ ] Calculate rolling volatility on prices
+- [ ] Build correlation matrix among commodities
+- [ ] Test a simple strategy (e.g., long if price > 30-day MA)
+- [ ] Create a basic dashboard (matplotlib, plotly, or other)
 
----
+### Refinement and Deepening
+- [ ] Deepen quantitative strategies
+- [ ] Improve dashboard and visualizations
+- [ ] Deepen understanding of fundamentals’ impact
+- [ ] Organize and document everything in the repo
 
-## 🔄 Learning Rotation Plan
+... Well nothing is carved in stone.. hence we will modify it ... tho we need tostart somewhere no?
 
-Rotate focus every 1-2 weeks to keep learning fresh and build skills in parallel:
-
-| Week(s) | Focus Area             | Example Project/Task                        |
-|---------|-----------------------|--------------------------------------------|
-| 1-2     | Python & pandas       | Clean commodity price datasets, plot returns |
-| 3-4     | SQL basics            | Create simple DB, query trades & prices     |
-| 5-6     | Time series analysis  | Calculate moving averages, volatility        |
-| 7-8     | Data automation       | Fetch daily prices via API, store in DB      |
-| 9-10    | Git & workflow        | Push projects, manage branches, pull requests |
-| 11-12   | Commodity market basics | Explore futures, contango/backwardation     |
-| 13-14   | Visualization         | Build dashboard for strategy monitoring      |
-| 15-16   | Risk metrics          | Calculate portfolio VaR and analyze risk     |
-| ...     | Repeat cycle          | Deepen or start new projects                  |
-
----
-
-## 📅 No fixed deadlines
-
-The goal is steady, sustainable progress.  
-Rotate topics to avoid burnout and keep curiosity alive.
-
----
-
-## 🔗 Resources & References
-
-- [Pandas Documentation](https://pandas.pydata.org/docs/)  
-- [Python for Finance (Book)](https://www.oreilly.com/library/view/python-for-finance/9781492024323/)  
-- [QuantStart](https://www.quantstart.com/)  
-- [Coursera: Trading Strategies](https://www.coursera.org/learn/trading-strategies)  
-- [Investopedia: Commodities Futures](https://www.investopedia.com/terms/c/commodityfutures.asp)  
-- [Streamlit Documentation](https://docs.streamlit.io/)  
-- [SQL Tutorial](https://www.w3schools.com/sql/)  
+Ciaoooooo :)
