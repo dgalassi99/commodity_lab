@@ -28,8 +28,11 @@
 
 ## 2025-07-08
 - Sections 2 and 3 of commodity_dashboard.ipynb
+- Finish (for now) commodity_dashboard.ipynb
 
-
-
+## 2025-07-09
+- Focus on theory about commodities 
+- Reading articles and summarizing in market_basics.md
+- Starting future_structures.md
 ...
 
