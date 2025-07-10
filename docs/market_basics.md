@@ -31,7 +31,7 @@ timing of the transaction and the delivery date of the commodity (immediate vs i
 The use of futures is needed to lock the price in adavance. Future's prices are based on spot prices plut the *cost of carry* (cost of storage, interest and insurance on it).
 So the future price (F) is the sum of spot price (S) and storage cost (C) times the exponential of the product between time to maturity (t) and the difference between risk free (r) and convenience yield (y) rate.
 
-$F = (S + C) e^{(r-y)t} or sometimes F = S e^{(c+r-y)t} $
+$F = (S + C) e^{(r-y)t}$ or sometimes $F = S e^{(c+r-y)t}$
 
 Note: y acts a s a negative cost, so F < S when y > (r+c). The convenience yield takes into account expectations of supply and demand.
 
