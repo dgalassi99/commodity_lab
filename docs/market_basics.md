@@ -71,7 +71,7 @@ the same contract could be 100 USD, 110 USD (normal backwardation) or 90 USD (co
 **Contango:** future price above the expected spot price. Because converge must occurr, contango
 implies that future prices are falling over time. 
 
-**Backwardation:** future price below the expected spot price. Because converge must occurr, contango
+**Backwardation:** future price below the expected spot price. Because converge must occurr, backwardation
 implies that future prices are increasing over time. 
 
 Consider we purchase today a future contract due in one year (spot at 60 USD). If today's future price is 
