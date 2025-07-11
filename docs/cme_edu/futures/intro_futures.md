@@ -1,8 +1,4 @@
-# Futures
-
-## Introduction
-
-### What a Future is
+# Introduction to Futures
 
 Forward and futures contracts allow market partipants to offset/assume risk of a price change of an asset overtime. Futures differ from forwars as: (1) a future is a legally binded contract; (2) future transactions are made via an exchange. Simply put *futures are standardized*. 
 
