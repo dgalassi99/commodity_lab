@@ -16,6 +16,10 @@ __pycache__/
 data/raw/
 data/processed/
 
+# Ignore content of certifications folder
+
+certifications
+
 # Database folders 
 db/*
 
