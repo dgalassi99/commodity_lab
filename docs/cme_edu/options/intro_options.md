@@ -57,4 +57,28 @@ For physically-delivered commodities, option expirations will expire prior to th
 
 ### Call Options
 
+A call option is the right to buy the underlying futures contract at a certain price.
+
+#### Buying (Long) Calls
+
+When prices move upward the call owner can exercise the option to buy the future at the original strike price. This is why the call will have the same profit potential as the underlying futures contract. However, when prices move down you are not obligated to buy the future at the strike price.
+
 ![alt text](image-3.png)
+
+The potential to profit on a call option comes with a cost. The seller or “writer” of the option will require compensation (similarly to an insurance policy premium) called the option premium. The buyer of a call option pays a premium to the seller of a call option.
+
+As a result of the premium, the profit potential for a call is less than the profit potential of a futures contract by the amount of premium paid. The price of the future must rise enough to cover the original premium for the trade to be profitable. Moreover, options premiums are impacted by time decay and  changes in volatility (futures are not).
+
+The breakeven point for a call is the strike price plus the premium paid. So if you paid 4.50 points for a 100 call option, the breakeven is 104.50. The most you could lose is the premium or 4.50 points.
+
+![alt text](image-4.png)
+
+#### Selling (Short) Calls
+
+For every long call buyer, there is a corresponding call option “writer” or seller. If you sell the call option, then you receive the premium in return for the accepting the risk. Option sellers have unlimited risk if the futures price continues to rise. Call sellers will profit as long as the futures price does not increase beyond the value of the premium received from the buyer.
+
+The breakeven point is exactly the same for the call seller as it is for the call buyer
+
+![alt text](image-5.png)
+
+### Put Options
