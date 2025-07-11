@@ -83,3 +83,6 @@ The breakeven point is exactly the same for the call seller as it is for the cal
 <img width="856" height="387" alt="image" src="https://github.com/user-attachments/assets/f3e904f2-5265-49f3-88f8-5dd74117f472" />
 
 ### Put Options
+
+<img width="752" height="371" alt="image" src="https://github.com/user-attachments/assets/0d448447-be24-4ab3-b517-ba43197bc701" />
+
