@@ -27,6 +27,9 @@ db/*
 *.log
 *.tmp
 
+#PNGs
+*.png
+
 # MacOS system files (if you’re on Mac)
 .DS_Store
 
