@@ -43,15 +43,16 @@ Let's see some examples considering options on the ES futures.
 
 - Quarterly options contracts are offered on the E-mini S&P 500 futures contract. In this case the June quarterly option contract would expire at the same time as the futures contract.
 
-![alt text](image.png)
+<img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/dda599fe-646a-478e-b4f7-a21236f7b1b9" />
 
 - Monthly contracts are also offered for the same futures product. With a monthly option contract you can express a short term opinion on this longer dated futures contract. For each listed month, such as May and April, you can trade an option that will expire within a month and settles into the same June ES futures contract. 
 
-![alt text](image-1.png)
+<img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/9a0c75cf-c246-4ac3-ac92-f5c2bde22855" />
 
 - There are also weekly options on the E-mini S&P 500 futures contract. A rolling list of five weekly options that expire each Friday is offered on most products. After each weekly front-end contract expires, another back-end weekly is listed. 
 
-![alt text](image-2.png)
+<img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/b25c4ee2-f34e-4c95-9825-c0dc4aeb4404" />
+
 
 For physically-delivered commodities, option expirations will expire prior to the futures settlement. This happens so that traders have an opportunity to mitigate delivery of the physical product. For example, when WTI Crude Oil futures settle in June, the WTI option will have a May expiration date. If the option is exercised into the active futures contract, the trader has time to adjust their futures position to either offset the position or make plans to take delivery.
 
@@ -63,7 +64,7 @@ A call option is the right to buy the underlying futures contract at a certain p
 
 When prices move upward the call owner can exercise the option to buy the future at the original strike price. This is why the call will have the same profit potential as the underlying futures contract. However, when prices move down you are not obligated to buy the future at the strike price.
 
-![alt text](image-3.png)
+<img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/19da1091-cadb-4e1c-9862-dc752dc60f5a" />
 
 The potential to profit on a call option comes with a cost. The seller or “writer” of the option will require compensation (similarly to an insurance policy premium) called the option premium. The buyer of a call option pays a premium to the seller of a call option.
 
@@ -71,7 +72,7 @@ As a result of the premium, the profit potential for a call is less than the pro
 
 The breakeven point for a call is the strike price plus the premium paid. So if you paid 4.50 points for a 100 call option, the breakeven is 104.50. The most you could lose is the premium or 4.50 points.
 
-![alt text](image-4.png)
+<img width="855" height="452" alt="image" src="https://github.com/user-attachments/assets/a820855c-790a-43cf-9ff8-4ae9255284dc" />
 
 #### Selling (Short) Calls
 
@@ -79,6 +80,6 @@ For every long call buyer, there is a corresponding call option “writer” or 
 
 The breakeven point is exactly the same for the call seller as it is for the call buyer
 
-![alt text](image-5.png)
+<img width="856" height="387" alt="image" src="https://github.com/user-attachments/assets/f3e904f2-5265-49f3-88f8-5dd74117f472" />
 
 ### Put Options
