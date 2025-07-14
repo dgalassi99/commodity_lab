@@ -110,14 +110,122 @@ The breakeven point is exactly the same for the put seller as it is for the put 
 
 <img width="788" height="345" alt="image" src="https://github.com/user-attachments/assets/97bce99d-f45f-4170-849c-93cbac9edcab" />
 
+### AM/PM Expirations
 
+Options expiring ad the close of the market are PM and options expiring the morning of the last trading day are AM.
 
+Most of the options expire PM, but there are exceptions. Options with AM expiration are generally written on a futture that has the same expiration date and time and this is typical of financially settled (cash) commodities.
 
+In the case of S&P500 futures, the final settlement is determined by the opening prices of all the companies forming the index. The calcualtion is done by the administrator (Standard and Poor's), who provide a special opening quote (SOQ) indicating the final settlement price. PM options instead have a settlement price equal to the closing price of the underlying on the last trading day. For example, a long call is exercised if SOQ > Strike!
 
+### Exercise and Assignment
 
+Option buyers (owners - who is long) can exercise their option. In this case the sellers (writers - who is short) are assigned. What does it mean?
 
+Owners of a long calls can exercise by "calling the underlying away" from the seller. While owners of long put can exercise by "putting the underlying back" to the seller. Summarizing, only buyers (long) have the right of exercise. 
 
+Sellers, instead, are obliged to sell to you/buy from you the option at the strike price, regardless thecurrent price. This obbligation is embedded in the premium tehy received to take the risk on, and the exchange/clearing house makes sure this obligation is respected by assigning.
 
+<img width="858" height="560" alt="image" src="https://github.com/user-attachments/assets/65c5a161-bd6f-40f1-a2a2-c757af7e1ff0" />
 
+### European and American Options
+
+- American style options can be exercised at any time prior to expiration
+- European style options can be can be exercised only at expiration
+
+### Moneyness & Intrinsic Value
+
+Moneyness indicates whether a contract is *in the money (ITM)*, *out of the money (OTM)* or *at the money (ATM)*. A call (put) is in the money if the price is bigger (smaller) than the strike.
+
+When an option is ITM it is said to have instrisic value. Hence, if an options expires OTM we said that it expired worthless as it has not been exercised. The intrisinc value express the value of the option if it expired in this instant.
+
+But what is the value of an option contract before expiration?
+
+Option Value = Intrinsic Value + Time Value
+
+Instrinsic value is the payoff if the option is exercised now, that is:
+
+- Call option: $max(Spot Price - Strike Price, 0)$
+- Put option: $max(Strike Price - Spot Price, 0)$ 
+
+The time value (always positive) reflects the extra premium the option has because of the possibility of price movements. The time value gets to zero as the option approaches expiration.
+
+Note that the time value decay is exponential and called $\theta = -dV/dt$. For American options there is no closed form for the decay as they can be exercised in any moment. For european one there is a complex formula:
+
+<img width="537" height="135" alt="image" src="https://github.com/user-attachments/assets/a561e823-02bb-4092-8240-6ec2266d626b" />
+
+<img width="637" height="585" alt="image" src="https://github.com/user-attachments/assets/3bcfb5ee-bc7d-460e-9c95-5f038b3cf947" />
+
+<img width="692" height="372" alt="image" src="https://github.com/user-attachments/assets/a5462936-3def-469f-899b-d703cc3686d3" />
+
+Note that N'(d1) is maximized at S = K (options at the money) because if ATM a small movement can make it profitable or not, that is why ATM options have a faster decay.
+
+### PnL
+
+Let's an example for a call for both the perspective of the seller and the buyer (tables are self explanatory)
+
+For the seller...
+
+<img width="661" height="267" alt="image" src="https://github.com/user-attachments/assets/ae5724e5-7e08-4791-ac28-dce0618c1e7c" />
+
+For the buyer...
+
+<img width="645" height="260" alt="image" src="https://github.com/user-attachments/assets/eb0b6ad6-e028-46b9-b366-d3076581e4c6" />
+
+### Options Pricing
+
+Option pricing is based on the unknown future outcome for the underlying asset.
+No one knows where the price will be, but we can draw some conclusions using pricing models.
+
+When looking at call options, a higher strike will cost less than a lower strike.
+
+To get an idea of how much the premium should be at each strike, we are going to use a simple model. Assume an asset is priced at $100 and has the characteristic of moving one dollar each month (either up or down). In this model, we will assume the price movement repeats every month over the life of the option and the option expiration will occur in four months.
+
+What is the probability for each of the possible price outcomes after four months? In this model there are 16 possible paths that lead to each of the five price outcomes. The probability of each outcome can be calculated by aggregating the paths for each price. The probabaility is obtain dividing the numebr of paths that can lead to a price poitn by total number of paths.
+
+<img width="735" height="465" alt="image" src="https://github.com/user-attachments/assets/4436f7c0-9a4e-45e2-ab7a-a0a1576ae8da" />
+
+Now that we have the probability for each price point, we can start pricing options with different strike prices. First, you need to know the payoff for each strike price at the defined price level.
+
+For a strice of 97 USD for example, a price point of 96 gives 0 payoff as it is OTM, 98 gives a payoff of 1, 100 of 3, and so on...
+
+Then we multiply the payoff by the probability of occurence of a given price. Adn finf the price by summing up all those quantities. In this case the result is 3.0625.
+
+<img width="807" height="282" alt="image" src="https://github.com/user-attachments/assets/cf754a37-f408-469a-ae6a-7fe65f1d4079" />
+
+We can repeat the process for different strike prices. As you can see higher strikes are priced less as the probability of being ITM is less.
+
+<img width="862" height="403" alt="image" src="https://github.com/user-attachments/assets/154618b2-d748-40bb-b6ee-724bd71c5bbb" />
+
+### Option Volatility
+
+Volatility is the "bounciness" of the underlying contract of the option. For option the time adjusted standard deviation is reported. Calculated as the volatility times the square root of the time period we are considering.
+
+For example... 
+
+<img width="877" height="363" alt="image" src="https://github.com/user-attachments/assets/fedffa77-9f89-4f69-bf4c-c1aa47acb168" />
+
+### Put-Call Parity
+
+The PCP states that Futures Price(F) - Call Price(C) + Put Price (P) - Strike Price(K) = 0. If this is not satisfied an arbitrage opportunity exists regardless of where the market closes
+
+Let's see how...
+P = 8 and C = 2, K = 105 and F = 100  --> 100 - 2 + 8 - 105 = +1 --> No PPC
+
+We can short the put, long the call and short the futures.
+
+1. At expiration F < K (say 104):
+- We lose 104-100 on the short futures --> -4
+- We lose 2 on the call (not exercised) --> -2
+- We gain 8 on the put minus one to pay becuase the buyer exercises --> +7
+- Net profit is +1
+
+2. At expiration F > K (say 106):  
+- We lose 106-100 on the short futures --> -6
+- We paid 2 for the the call and get back 1 (exercised) --> -1
+- We gain 8 on the put bacuse the buyer does not exercise --> +8
+- Net profit is +1
+
+### Options on Futures vs ETFs
 
 
