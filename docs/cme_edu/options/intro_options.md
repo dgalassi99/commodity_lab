@@ -64,7 +64,7 @@ A call option is the right to buy the underlying futures contract at a certain p
 
 When prices move upward the call owner can exercise the option to buy the future at the original strike price. This is why the call will have the same profit potential as the underlying futures contract. However, when prices move down you are not obligated to buy the future at the strike price.
 
-<img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/19da1091-cadb-4e1c-9862-dc752dc60f5a" />
+<img width="880" height="518" alt="image" src="https://github.com/user-attachments/assets/438470bf-b54f-47af-bef5-0fd7460f9f0a" />
 
 The potential to profit on a call option comes with a cost. The seller or “writer” of the option will require compensation (similarly to an insurance policy premium) called the option premium. The buyer of a call option pays a premium to the seller of a call option.
 
@@ -84,5 +84,40 @@ The breakeven point is exactly the same for the call seller as it is for the cal
 
 ### Put Options
 
+A put option is the right to sell the underlying futures contract at a certain price.
+
+#### Buying (Long) Puts
+
+A put option has a similar profit potential to a short future. When prices move downward the put owner can exercise the option to sell the futures contract at the original strike price. However, when prices move up you are not obligated to sell the future at the strike price.  
+
 <img width="752" height="371" alt="image" src="https://github.com/user-attachments/assets/0d448447-be24-4ab3-b517-ba43197bc701" />
+
+The potential to profit on a put option does come with a cost. The seller of the option will require a compensation under the form of a premium. The buyer of a put pays a premium to the seller of a put option.
+
+As a result of the premium, the profit potential for a put is less than the profit potential of a futures contract by the amount of premium paid. The price of the futures contract must fall enough to cover the original premium for the trade to be profitable. The breakeven point for a put is where the profit on the futures contract that you can purchase at the strike price is equal to the premium paid for the call.
+
+<img width="742" height="397" alt="image" src="https://github.com/user-attachments/assets/79e2869d-481b-4141-946a-faff0849ec0e" />
+
+#### Selling (Short) Puts
+
+If you have written the put option, then you receive the premium in return for the accepting the risk that you may need to buy a futures contract at a higher price than the current market price for that future.
+
+While Put option sellers don’t have unlimited risk, the risk of writing puts can still be very large. The most a put option seller can lose is the full strike price minus the premium received.  If you sell a 100 put option, and the underlying future drops to 20.  You will have an 80pt loss minus the premium you took in which will only offset a small portion of the loss.  
+
+Put sellers will profit as long as the futures price does not fall beyond the value of the premium received subtracted from the strike price. For example, if you sell a 100 put strike and receive a premium of 6.00 pts.  You will profit as long as the future is above 94 (strike minus the put premium).
+
+The breakeven point is exactly the same for the put seller as it is for the put buyer.
+
+<img width="788" height="345" alt="image" src="https://github.com/user-attachments/assets/97bce99d-f45f-4170-849c-93cbac9edcab" />
+
+
+
+
+
+
+
+
+
+
+
 
