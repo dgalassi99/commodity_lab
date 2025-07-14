@@ -34,5 +34,11 @@
 - Focus on theory about commodities 
 - Reading articles and summarizing in market_basics.md
 - Starting future_structures.md
-...
 
+## 2025-07-10
+- finish future_structures.md
+- start lectures/articles from CME Group
+- intro_futures.md
+
+## 2025-07-11
+- intro_options.md finished
