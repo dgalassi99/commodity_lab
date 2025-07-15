@@ -11,3 +11,5 @@ sqlalchemy
 ipykernel
 yfinance
 plotly
+quandl
+nasdaq-data-link

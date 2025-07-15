@@ -35,3 +35,8 @@ db/*
 
 # Windows system files
 Thumbs.db
+
+# API Keys
+
+docs/api
+
