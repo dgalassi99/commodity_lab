@@ -1,7 +1,7 @@
 import yfinance as yf
 import pandas as pd
 
-def fetch_spot_prices(
+def fetch_data(
     tickers: dict, 
     period: str = "1mo", 
     interval: str = "1d", 

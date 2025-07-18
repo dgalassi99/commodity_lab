@@ -42,3 +42,15 @@
 
 ## 2025-07-11
 - intro_options.md finished
+
+## 2025-07-14
+- key_economic_events.md
+
+## 2025-07-15
+- benefits_of_futures.md
+- term_structure.ipynb ... still trying to use quandl API :(
+- could not not data available 
+
+## 2025-07-18
+- restructuring the repo
+- starting oil_analysis.ipynb
