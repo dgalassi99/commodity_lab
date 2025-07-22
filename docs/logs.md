@@ -54,3 +54,7 @@
 ## 2025-07-18
 - restructuring the repo
 - starting oil_analysis.ipynb
+
+
+## 2025-07-22
+- continue oil_analysis.ipynb mostly on roll yield analysis
