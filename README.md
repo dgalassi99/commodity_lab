@@ -23,7 +23,6 @@ The goal is to build a solid, practical skillset aligned with roles at commodity
 - 
 - `docs/` — contains documents of different nature such as theory lectures or more  
 - `projects/` — Self-contained projects with code, data, results, and explanations  
-- `notebooks/` — Exploratory notebooks, experiments, and quick tests  
 - `requirements.txt` — Python dependencies  
 - `roadmap.md` — Learning plan and rotation schedule  
 - `README.md` — This file  
