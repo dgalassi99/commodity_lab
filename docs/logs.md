@@ -63,3 +63,5 @@
 - rename oil_analysis.ipynb to WTI_continous_futures_analysis 
 - extract contracts and check the roll dates are right
 - download futures WTI term structure of 22/07/2025 
+- Create helper functions.py
+- create update_WTI_futures_db and test it in the notebook WTI_term_structure
