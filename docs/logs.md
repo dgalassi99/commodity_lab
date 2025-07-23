@@ -58,3 +58,8 @@
 
 ## 2025-07-22
 - continue oil_analysis.ipynb mostly on roll yield analysis
+
+## 2025-07-22
+- rename oil_analysis.ipynb to WTI_continous_futures_analysis 
+- extract contracts and check the roll dates are right
+- download futures WTI term structure of 22/07/2025 
