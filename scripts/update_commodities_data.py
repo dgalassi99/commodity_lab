@@ -3,7 +3,7 @@ import os
 
 sys.path.append(os.path.dirname(__file__))
 
-from fetch_yf_spot_data import fetch_spot_prices
+from scripts.fetch_yf_data import fetch_spot_prices
 from upload_db import upload_df_to_db
 
 def update_commodities(tickers, db_path="../../db/commodities.db", period='1y', interval='1d'):
