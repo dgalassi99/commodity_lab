@@ -20,7 +20,8 @@ The goal is to build a solid, practical skillset aligned with roles at commodity
 ---
 
 ## 🗂️ Repo Structure
-
+- 
+- `docs/` — contains documents of different nature such as theory lectures or more  
 - `projects/` — Self-contained projects with code, data, results, and explanations  
 - `notebooks/` — Exploratory notebooks, experiments, and quick tests  
 - `requirements.txt` — Python dependencies  
@@ -49,10 +50,10 @@ Each project is a step towards mastering the skills needed to analyze, automate,
 ## 🛠️ Tech stack & tools used
 
 - Python (pandas, NumPy, Matplotlib, Scikit-learn)  
-- SQL (SQLite, PostgreSQL - planned)  
+- SQL (SQLite)  
 - Git & GitHub for version control  
 - Streamlit for dashboards  
-- APIs & web scraping for data automation  
+- APIs & web scraping for data automation (for example from yfinance or other data provider)  
 
 ---
 
