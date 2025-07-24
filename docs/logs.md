@@ -1,6 +1,5 @@
 # Progress Log
 
-# Progress Log
 
 ## 2025-07-06
 - Created the initial folder structure (`data`, `notebooks`, `scripts`, `projects`, `docs`).
