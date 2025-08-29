@@ -62,4 +62,4 @@ links...
 
 - https://www.investopedia.com/terms/r/roll-yield.asp
 - https://quantpedia.com/strategies/term-structure-effect-in-commodities
--  https://www.investopedia.com/terms/i/invertedmarket.asp
+- https://www.investopedia.com/terms/i/invertedmarket.asp
