@@ -64,3 +64,7 @@
 - download futures WTI term structure of 22/07/2025 
 - Create helper functions.py
 - create update_WTI_futures_db and test it in the notebook WTI_term_structure
+
+## 2025-08-29
+- created CCI folder for interview prepping and general study
+- finish some notebooks 
