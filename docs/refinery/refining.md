@@ -4,6 +4,8 @@ Notes from "Petroleum Refining" by W.L. Leffler + Some insights of a chemical en
 
 The refinery is a very complex system of separation, reacting and mixing units. The main goal of a refinery system is, of course, the profit maximization. Technicalities, tho, play a crucial role. Understanding how the different "organs" of the refinery communicate and exchange fluids/streams is a prerequisiste to understand oil supply.
 
+Ah, almost forgot, you can visit this board where a general schema of all the units I describe here is shown --> https://miro.com/app/board/uXjVJLgIsSU=/
+
 ## Before getting to the refinery
 
 ### How oil formes
@@ -30,11 +32,86 @@ This simple sistem has three different phases (chemically speaking phases). Ther
 
 ### Extracting oil
 
-Great, now we have an idea of what an oil reservoir looks like. 
+Great, now we have an idea of what an oil reservoir looks like. Now, we are interesting in extracting the oil and the vapors while keeping the water there. Unfortunately, this is not fully possible and some water will come out dispersed in the oil phase (we have little water droplets like when you make mayonnaise). I will not go into the extraction details but here are some key bullet points:
+
+- Vapors are either extracted first as they come out naturally and than we pump out the oil or we use the pressure of teh vapor to favor the oil extraction and then extract the vapors
+- During the extraction water content will increase as we keep extracting (the bottom of the dome is rich in water) and the extraction process will stop when the water content reaches a given threshold (the cost of water removal is too high and the future processes become unprofitable)
+- Even with care, water, salts, sulphur and other impurities will  be present in the crude. In loco treatments are necessary such as:
+    - Decantation to remove most of the water and solid particles
+    - Electrical desalting (coagulation of water and removal by application of an electric field)
+
+Et voila, more or less now the oil is ready to be shipped to a refinery!
+
 ## Distilling
 
+Distillation (or fractioning) is the first and the only non-chemicalish step that occurs in the refinery. Imagine the distilltion column as a splitting point. Here the components of the crude are separatated into several main actors.
 
+The separation occurs by leveraging the wide spectrum of volatilities (boiling points or vapor pressurese... whichever concept is easier for you) of the oil species. Large and tall trayed columns are used for this operation. Now, as much as would like to get into the concepts of transport phenomena, I prefer to keep it as non-technical as possible. So here is a brief explanation.
 
+Imagine the column as a sky scraper, by going up, at each floor, you feel colder and colder. What is happening is that a thermal gradient/profile is present along the vertical axis. Each chemical species into the crude mixture is characterized by a different boiling point, hence a molecule that is liquid at the seventh floor is maybe vapor at the third one. 
+
+By extracting several streams (cut points) along this height we obtain streams of different compositions. Those streams contain lighter products as we go up along the height. Simply speaking we will extract the followings strams (top-down order here):
+- Butane and lighter
+- Straight run gasoline (SRG)
+- Naphta (NP)
+- Kerosene (KS)
+- Light gas oil (LGO)
+- Heavy gas oil (HGO)
+- Straight run residue (SRR)
+
+Seems easy no? Well some issues occur. Those streams are mixture of compounds so their boiling points are not unique (if you boil water, a pure species, it will evaporate at 100 °C). There are indeed an initial and an end boiling points (IBP, EBP). The IBP of an heavier stream (say HGO) overlaps with the EBP of a lighter one (say LGO), hence by changing a bit the cut point we can shift the production volumes (an the composition of the involved streams as a consequence). Those cut points operations are used to be flexible and adjust the supply of different raw products as the demand mutates.
+
+## Vacuum Flashing 
+
+The main limitation of distilling crude is the maximum temperature we can reach befora cracking phenomena occur. As a result the SRR contains a super wide range of components that can't be veporized. What is the solution? Applying vacuum!
+
+As we reduce the pressure, the boiling temperature of molecules drops. We can use this principle to desing the vacuum flasher (VF) unit. Simply speking we take a vacuum pump and connect it to a traiyed column. The SRR is fed into the column and by the same principles of fractioning we split the SRR into the flasher tops (light and heavy tops) and flasher bottoms. The tops are usually send to catalytic cracking to reduce teh average molecular size (we will see...) and the bottom is used as asphault or sent to units such as visbreaker, coker or thermal cracker.
+
+## Refinery Gas Plants
+
+During a lot of operations (distillation, cracking, ...) light streams (C4-) are formed and need to be managed. Where?
+
+### Saturated Gas Plants
+
+Saturated gas (only single C-H bonds) aka paraffines are treated in the sat gas plant. The separation occurs mostly by fractionating and absorption, but here, due to very similar volatilities between the species the separation is harder and sometimes requires cryogenic techniques (this is my current expertise, so its very hard for me not to get into details...). 
+
+Now, imagine to be a little molecule of this gas stream... which unit will you encounter?
+- The gas is compressed and sent to a phase separator buffer (compression increases the boiling T) where vapor species (ethane and ligher) and a liquid stream (propane and heavier) are splitted. 
+- Now some C2- will be present int the C3+ liquid stream. This current is depressurized to vapor and sent to an absorption column (*) to selectively absorb the C3+ via a lean oil (eptane/octane solvent mixture). The solvent traps C3+ and does not interact with the C2- which exit from the top as vapors. The fat oil (lean oil after C3+ are captured) is sent to a stripping column where we remove the absorbed compounds and regenerate the solvent to send it back to the first column.
+- The C3+ mixture (propane, n-butane, iso-butane) are separated by using the depropanizer (fractioning teh C3 on top and n/i-C4 at the bottom) and the deisobutanizer (fractioning i-C4 as the top and the n-C4 as the bottom). 
+- Last but not least, during the absorption some of the lean oil gets out as vapor with the C2- --> wet gas. This wet gas goes into another absorption process where the dry teh C2- stream by absorbing the lean oil with an heavier solvent (sponge oil)...
+ 
+Note: given a mixture of K species, we need K-1 distillation units to separate them all!
+
+(*) An absorption unit is similar to a distillation column. Here, usually, we do not have trays but a packing material (random or structured) with a very high specific surface area (area/volume ratio) which favors the contact between the vapors we want to absorb and the solvent (the liquid that absorbs selectively). 
+
+### Cracked Gas Plants
+
+Light gases formed during reforming or cracking ops have a wider variety. Non saturated hydrocarbons such as olefins or some naphtenes are present. The CGP is similar to the SGP but more distillation units are needed are the number of species is higher.
+
+## Catalytic Cracking 
+
+As a result of the increasing demand for light products the need to crack heavy molecules to smaller ones became the standard. 
+
+### CC Process 
+
+HGO and flasher tops are cracked at high T, high P in catalytic reactors. I know... here is some context. Catalysts are chemical species that interfere (usually positively) with reactants speeding up specific reactions without reacting themselves. Two key things:
+
+1. Speed up a reaction?
+
+- A chemical reaction is nothing else than something occurring because an equilibrium has been broken. For example, changing temperature or pressure might shift an equilibrium and initialize a reaction (this is THERMODYNAMICS!). The speed of reaction, instead, has nothing to do with thermodynamic, but it is a matter of KINETIC. Imagine a species a chemical species as something that can potentially change status. Now, a nice methaphor is the following. Suppose you are lying on your sofa and you wonder to or not to go for a jogging. Usually, there is a "force" (like you wan to lose weight, or whatever the reaosn is) driving you to leave the confort of your sofa and get out. The hardest step is not, at least in the common opinion, is to stand up, change, and go out. Once you go over the "energetic barries" the jog is usually smooth and pleasent. The same occurs during a chemical reaction. Once we go over the energetic barries (Gibbs free energy of reaction) everything goes smooth.
+
+2. I said "specific reactions"... why?
+
+- Now, imagine there are thousands potential joggers in the same situation as you. Similarly thousands of parallel reactions can occur. What a catalyst does is to selectively promote some reactions by altering their kinetics. Imagine them as a personal trainers that selectively picks some potential joggers and motivates them to go out and with different intensities. The probability distribution of the joggers is not uniform anymore but is skewed. The same occurs with a catalyst. SO those alter the KINETIC of reactions by speeding up some and keeping other inaltered. So, even if thermodinamically speaking all molecules are potential joggers, some are so slow to get up that the other already finished the run. 
+
+I hope this little metaphor made you understand the difference. Now, let's get back to hte CC unit. The goal is to maximixe th eproduction of gasoline by triggering cracking reactions up to a certain extent. Ofc, chem. engineering is a matter of probabilities and detrministic outcomes are quite unlikely. In other words, issues occurs...
+
+- Since we start with a mixture of molecules of different sizes we will crack those into a spectra of lighter products. Some of those are non sat molecules such as olefines, cycloalkanes and aromatics.
+- As cracking occurs, due to hydrogen deficiency, coke is formed. Coke is poisonous for the catalyst as it deposits on its surface "masking out" a lot of reactive area.
+- Bigger molecules are likely to be cracked on side chains (weaker bonds). As a result the average density of the mixture increases (ironically to an higher density of the feed itslef)
+
+How do we deal with it? Three stage process --> reactor, catalyst regenerator and fractionator
 
 ## Hydrogen, Hydrotreating and Sulphur Plants
 
@@ -76,8 +153,6 @@ The H2S is further oxidated via the Claus process:
 1. Combustion 2H2S + 2O2 -> SO2 + S + 2H2O
 
 LINK TO BLOCK PROCESS DIAGRAM --> https://miro.com/app/board/uXjVJLgIsSU=/
-## Distilling
-
 
 
 ## Isomerization 
