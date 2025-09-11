@@ -111,49 +111,84 @@ I hope this little metaphor made you understand the difference. Now, let's get b
 - As cracking occurs, due to hydrogen deficiency, coke is formed. Coke is poisonous for the catalyst as it deposits on its surface "masking out" a lot of reactive area.
 - Bigger molecules are likely to be cracked on side chains (weaker bonds). As a result the average density of the mixture increases (ironically to an higher density of the feed itslef)
 
-How do we deal with it? Three stage process --> reactor, catalyst regenerator and fractionator
+How do we deal with it? Three stage process --> reactor, catalyst regenerator and fractionator.
 
-## Hydrogen, Hydrotreating and Sulphur Plants
+### Reaction section
 
-### Hydrotreating
+The feed is heated up and meets hot steam and the regenerated catalyst in the riser (wide pipe connected to a tank) where the reaction occurs (low residence time - very fast reaction). The mixed stream enters the disengagement chamber where the catalyst is removed via cyclones (separation by centrifugal motion) and sent to regeneration. While the cracked product exits from the top.
 
-Any stream of C6+ will contain some sulphur even in sweet crudes. Moslty as a constituent of aromatic rings it has to be removed by hydrotreating. It consists in blending those streams with H2, chlorine and heat them up in a catalytic bed of Co-Mo-W. 
+For this applicationthe catalyst are zeolytes. Those are sysntetic Al-Si particles/powder with an incredibly high specific surface area to maximize the surface available for teh reaction. The most recent application is the FCC (Fluid Cat Cracking) where the catalyst bed is fluidized to increase the yield. 
 
-Basically, H2
-- combines with S to form H2S
-- reduces nitrogen compounds are NH4
-- saturates olefins and aromatics into paraffines
+### Regeneration
 
-Moreover Cl2 reacts with metals and form chlorides.
+During the cracking process, some hydrocarbons crack down up to remove all the hydrogen and transform into coke. Coke is poisoinous for the catalyst as it deposits on its surface reducing the effectively available area for the reaction. A catalyst whose area is almost fully covered is said to be spent and need to be regenerated. This is done by blowing very hot air onto the spent cat in order to oxidize (burn) the coke to CO and CO2 (new CC units perform a total oxidation to CO2). This step serves also for generating the necessary heat to heat the mix of reactants for the main reactions.
 
-Simple config as heater, reactor and flash to exhaust H2 to be recycled and a stabilizer to split C4- and hydrotreated products. This step is key as:
-- Removal of metals, S and N which can poison cats in cracking and reforming ops.
-- Reduces S to meet environmental policies
-- Increases the sat fraction of the crude
+After the regeneration the cat is sent back to the riser and so on. A little fraction of cat is lost as the cyclones can't remove 100% of it, and a make up stream is present to replenish this lost.
 
-Hydrotreating also improves:
-- the quality fo jet fuel as increasing the H/C ratio imbroves the combustion and reduces the smoke point (smoke due to non full oxidations to H2O and CO2). 
-- it also promotes more sats which increase the CI of diesels
-- protects reformers catalyst increasing the converions
+### Fractionator
 
-On thhe other end:
-- more sats less AKI in gasolines 
+Finally, the cracked stream is sent to a distillation unit. We obtain the head as C4-, cat cracked gasoline, cat cracked LGO, cat cracked HGO and the slurry/cycle oil (slurry as it contains some solid catalyst not removed by the cyclones, cycle cause it is recycled back to the reactor feed). 
 
-### Hydrogen Sources
+Refineries play a lot with teh latitude of cut points in the CC fractionator. As the winter comes and the request for distillates increase the operation turn into a max distillate mode by increasing the volumes of LGO and decreasing the ones of gasoline, while during the summer they ge tinto max gasoline mode by inverting the direction of thi operation. The light head stream contains non sat gases with are treated in the CGS. A lot of aromatics simple rings are formed as the methyl/ethyl groups are broken from the ring. The presence of simple aromatics is positive and negative at the same time. For example, it increase the octane number of gasolines, but its bad for the properties of jet/diesel fuel.
 
-Mostly produced during the car reforming but also via:
-- SMR (Steam Methane Reformer) is an high T high P reactor to process CH4 + H20 -> CO + 3H2 ---> CO + H2O -> CO2 + H2 then CO2 removed by absorption
-- Swing adsorption or cryogenic distillation of light stream separating H2
+### Observations
 
-### Sulphur Facilities
+- CC units are sometimes the bottleneck of the refinery as they alsways work at max load to increase the gasoline output. The limiting stpe in CC itslef is usually the coke pirolysis as the reaction time of the coke oxidation is much bigger than the cracking reactions. This operations is faster during the night/winter when the air used is colder. This is because at lower T the mass of air introduced x unit of volume is higher and the coke oxidation is in excess of oxygen.
+- Feed quality is key
+- Temperature is a trade off, if too low slow craacking if to high we form too many light compounds and coke 
+- The recycle stream is not huge as if we increase the total feed rate (fresh feed + recycle) the catalyst/reactants ratio drops
+ 
+## Alkylation 
 
-Once formed, H2S must be removed as it oxidate to SOx during combustion reactions. The most common way is an absorption with methyl ammines (MEA, DEA, TEA) followed by a stripping unit to regenerate the solvent.
 
-The H2S is further oxidated via the Claus process:
-1. Combustion 2H2S + 2O2 -> SO2 + S + 2H2O
+It is the reaction via which propylene and butylenes react with isobutane to form high octane moelcules such as iC7 and iC8. Olefines come from the CC non sat streams and iC4 form the SGP. The process consist of a chiller and a HF liquid catalyzed reaction (residence times ~ 20 min). The spent catalyst is regenerated via settling and the product stream (which contains traces of acid) is neutralized via a caustic wash with caustic soda. Finally a series of fractionators is used to separate the inert reactants from the products.
 
-LINK TO BLOCK PROCESS DIAGRAM --> https://miro.com/app/board/uXjVJLgIsSU=/
+The key features are a not too high T to promote selective alkylation of C7/C8, the acid strenght, and the ratio olefins/iC4. Usually refineries operate with a strong excess of iC4 to avoid that olefins react between each other.
 
+## Catalytic Reforming 
+
+The CR feed is very similar to the CC feed in terms of volatility but the main difference resides in the composition fo the fed mixture. Originally naphta was the mian feed as this stream has a high concentration of paraffines and naphtenes which need to be reformed into isoparaffines and aromatics. The main reactions occurring are:
+1. Products
+- paraffines to isoparaffines
+- paraffines to naphtenes and hydrogen 
+- naphtenese to aromatics and hydrogen 
+2. Byproducs
+- paraffines cracking to light gases
+- side chains of naphtenes and aromatics cracked to light gases
+
+Pt/Rh/Pd (very high cost) are used as catalyst and chlorines is used as promoter of the desidered products. The reactor configuration is usually a series of fixed bed, some are in reaction mode while the other regenerate in parallel. Between those reactors the temperature and the pressure is controlled, and it raises towards the last reaction chambers where the non-reacted reactants need a little push to be reformed. Even if the reaction is endothermic a quite high T is used to stimulate the kinetic. 
+
+A flash to eliminate H2 follows. H2 is partially sent back to the feed to create an H2 rich environment which reduces coking. The rest of it is used as refinery H2 for different purposes (we will see them). A distillation column follows where we recover C4- from the top and the reformate from the bottom. 
+
+Catalyst (partial) regeneration occurs in parallel and it is slow a takes between 20 to 40 hours. Usually a deep regeneration is made every 6 to 12 months. In this occasion the catalyst extracted fromt he beds and regenerated in loco or sent to third parties. 
+
+The new technology is the UOP process, where the reactor is a tall column. The catalyst is fed at teh top and falls down meeting the reactants in a countercurrent flow regime. Once at the bottom it is extracted, sent to regen. and recycled back to the top. 
+
+Note:
+- As we push up the octane number of the reformate the volume decreases (trade-off game)
+- The quality of the fed naptha is key for having a good reformate --> PNA (parafiin, naphtenes, aromatics) analysis are conducted 
+- Benzene (cancirogen) formation is the main issue. Usually cycloC5/C6 are removed as precursor of benzene formation or we remove the benzene frm the reformate once formed. Some proposed a light post-reaction hydrotreating. Nice, but it reduces the overall octane number... again... trade-off is a keyword in chem. eng. 
+
+## Hydrocracking
+
+It is a more recent process than CC and can be a refinery stand alone or work "in collaboration" with CC and coker units. I like to call it teh jolly unit as it is flexibles to the mixture we can feed and, as a consequence, the spectra of products we obtain is wide. It is a unit we can "rearrange" to reply to month to month or seasonality changes in demand. 
+
+We can produce:
+- gasoline from LGO/HGO
+- distillates from HGO
+- iC4 from LGO
+
+This can be used to switch from gasoline max mode to sitilate max mode and viceversa!
+
+The process is basically a CC in presence of H2. Different catalyst are used to promote the cracking to different species, for example if we produce gasoline we want to have a good content reformates, while if we produce distillates we need to avoid side reforming reactions. 
+
+Generally speaking, even if flexible, distillates quality is higher than gasoline as the process will not produce a good amount of iso/aromatics molecules.
+
+The technology usually used fixed/fluidized cat beds (Co/Mo/Ni-Al) in presence of H2/steam and operates at very high P (~ 100 bar). P is so high as most of the feed comes from CC or coking units, so those are molecules that did not crack there as they are tough! Hence, high P is needed. The reactor is almost self heated, as while the cracking is endothermic, the hydrogenation reactions are exothermic. Balancing out those two create an environment where almost no extra/exteranl heat source is needed.
+
+Usually we have a series of reactors with different aims: (1) Open rings of complex molecules and hydrogenate comtaminants (S, N to H2S and NH4); (2) Cracking open rings to lighter compounds: (3) Saturate non sat compounds forming n/iso-paraffines and naphtenes. 
+
+I would also like to some refineries use HCC units to crack flasher bottoms or straigth run residues to HGO and LGO. We will deal with those plants in the residue section.
 
 ## Isomerization 
 
@@ -217,6 +252,47 @@ The plant structure is similar but bigger risers (higher residence time) and big
 ### Residue Hydro Cracking (RHC)
 
 Again scaled up wrt lighter feed plants. Usually the cat is a fludized bed with a strong hydrogen excess.
+
+## Hydrogen, Hydrotreating and Sulphur Plants  
+
+### Hydrotreating
+
+Any stream of C6+ will contain some sulphur even in sweet crudes. Moslty as a constituent of aromatic rings it has to be removed by hydrotreating. It consists in blending those streams with H2, chlorine and heat them up in a catalytic bed of Co-Mo-W. 
+
+Basically, H2
+- combines with S to form H2S
+- reduces nitrogen compounds are NH4
+- saturates olefins and aromatics into paraffines
+
+Moreover Cl2 reacts with metals and form chlorides.
+
+Simple config as heater, reactor and flash to exhaust H2 to be recycled and a stabilizer to split C4- and hydrotreated products. This step is key as:
+- Removal of metals, S and N which can poison cats in cracking and reforming ops.
+- Reduces S to meet environmental policies
+- Increases the sat fraction of the crude
+
+Hydrotreating also improves:
+- the quality fo jet fuel as increasing the H/C ratio imbroves the combustion and reduces the smoke point (smoke due to non full oxidations to H2O and CO2). 
+- it also promotes more sats which increase the CI of diesels
+- protects reformers catalyst increasing the converions
+
+On thhe other end:
+- more sats less AKI in gasolines 
+
+### Hydrogen Sources
+
+Mostly produced during the car reforming but also via:
+- SMR (Steam Methane Reformer) is an high T high P reactor to process CH4 + H20 -> CO + 3H2 ---> CO + H2O -> CO2 + H2 then CO2 removed by absorption
+- Swing adsorption or cryogenic distillation of light stream separating H2
+
+### Sulphur Facilities
+
+Once formed, H2S must be removed as it oxidate to SOx during combustion reactions. The most common way is an absorption with methyl ammines (MEA, DEA, TEA) followed by a stripping unit to regenerate the solvent.
+
+The H2S is further oxidated via the Claus process:
+1. Combustion 2H2S + 2O2 -> SO2 + S + 2H2O
+
+LINK TO BLOCK PROCESS DIAGRAM --> https://miro.com/app/board/uXjVJLgIsSU=/
 
 ## Aromatics Recovery
 
