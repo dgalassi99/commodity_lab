@@ -15,6 +15,7 @@ __pycache__/
 # Data folders (if you want to ignore raw/processed data from Git)
 data/raw/
 data/processed/
+projets/commodity_dashboard/data
 
 # Ignore content of certifications folder
 
