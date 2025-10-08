@@ -13,3 +13,4 @@ yfinance
 plotly
 quandl
 nasdaq-data-link
+dash
